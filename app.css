@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000;
+    --white: #FFF;
+    --green: #46c56c;
+    --darkgreen: #217139;
+    --lightgreen: #b5ffcb;
+    --blue: #00aaad;
+}
+
+/* container */
+
+
+/* calculator */
+
+
+/* input / display */
+
