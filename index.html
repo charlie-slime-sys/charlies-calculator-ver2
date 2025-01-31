@@ -6,37 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlie's Calculator 2.0</title>
     <link href="app.css" rel="stylesheet">
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
     <section class="calculator-grid">
         <section class="output">
-            <section class="previous-operand">123 +</section>
-            <section class="current-operand">456</section>
+            <section data-previous-operator class="previous-operand"></section>
+            <section data-current-operator class="current-operand"></section>
         </section>
 <!-- buttons galore -->
-        <button class="span-two">AC</button>
-        <button>DEL</button>
-        <button>/</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>*</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>+</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>-</button>
-        <button>.</button>
-        <button>0</button>
-        <button class="span-two">=</button>
+        <button data-all-clear class="span-two">AC</button>
+        <button data-delete>DEL</button>
+        <button data-operation>/</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two">=</button>
 
     </section>
 
-    <script src="scripts.js"></script>
 </body>
 
 </html>
