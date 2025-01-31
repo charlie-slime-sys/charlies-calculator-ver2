@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Varela Round", serif;
     box-sizing: border-box;
-    font-weight: normal;
+    font-weight: 400px;
 }
 
 :root {
@@ -13,10 +15,11 @@
     --darkgreen: #217139;
     --lightgreen: #b5ffcb;
     --blue: #00aaad;
+    --darkestgreen: #113e1e;
 }
 
 /* misc */
-body {
+body { 
     padding: 0;
     margin: 0;
     background: var(--darkgreen);
@@ -25,30 +28,43 @@ body {
 .span-two {
     grid-column: span 2;
 }
-/* container */
-
 
 /* calculator */
 .calculator-grid {
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(5, 100px) minmax(120px, auto);
+    grid-template-rows: repeat(4, 100px) minmax(120px, auto);
 }
-
 .calculator-grid > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 2px solid var(--white);
+    border: 1px solid white;
     outline: none;
     background-color: var(--lightgreen);
-    padding: 31px;
 }
 
 .calculator-grid > button:hover {
-    background-color: #8de0a6;
+    background-color: #46c56c;
+    transition: 200ms;
 }
-/* input / display */
+
+.output {
+    grid-column: 1 / -1;
+    background-color: var(--darkestgreen);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: var(--green);
+    font-size: 1.5rem;
+}
 
